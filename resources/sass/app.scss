@@ -1,0 +1,62 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@layer components {
+    // Typography
+    .heading-1 {
+        @apply text-blue-700 text-3xl font-bold;
+    }
+
+    .heading-2 {
+        @apply text-blue-700 text-xl font-semibold;
+    }
+
+    .heading-3 {
+        @apply text-gray-600 text-sm font-bold;
+    }
+
+    // Forms
+    .form-group {
+        @apply flex flex-col mb-3;
+    }
+
+    .form-label {
+        @apply text-gray-800 font-semibold;
+    }
+
+    .form-control {
+        @apply border rounded px-2 py-1;
+
+        &--error {
+            @apply border border-red-600;
+        }
+
+        &--success {
+            @apply border border-green-600;
+        }
+    }
+
+    .form-error {
+        @apply text-red-600 mt-1;
+    }
+
+    // Buttons
+    .btn-blue {
+        @apply bg-blue-500 text-white rounded px-5 py-2;
+
+        &:hover {
+            @apply bg-blue-700;
+        }
+    }
+
+    .btn-red {
+        @apply bg-red-500 text-white rounded px-5 py-2;
+
+        &:hover {
+            @apply bg-red-700;
+        }
+    }
+}
